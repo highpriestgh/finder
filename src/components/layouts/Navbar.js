@@ -1,13 +1,14 @@
 import React, { Component } from 'react'
 import { FaGithub } from "react-icons/fa";
 
-export class Navbar extends Component {
+class Navbar extends Component {
     render() {
         return (
-            <nav className="navbar bg-primary">
-
-                <h1><FaGithub /> {this.props.title}</h1>
-            </nav>
+            <div>
+                <nav className='navbar bg-primary'>
+                    <h1> <FaGithub /> {this.props.title}</h1>
+                </nav>
+            </div>
         )
     }
 }
