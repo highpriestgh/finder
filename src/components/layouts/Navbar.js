@@ -1,16 +1,16 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { FaGithub } from "react-icons/fa";
 
-class Navbar extends Component {
-    render() {
-        return (
-            <div>
-                <nav className='navbar bg-primary'>
-                    <h1> <FaGithub /> {this.props.title}</h1>
-                </nav>
-            </div>
-        )
-    }
+const Navbar = (props) => {
+
+    return (
+        <div>
+            <nav className='navbar bg-primary'>
+                <h1> <FaGithub /> {props.title}</h1>
+            </nav>
+        </div>
+    )
+
 }
 
 export default Navbar
